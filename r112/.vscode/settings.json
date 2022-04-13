@@ -1,0 +1,22 @@
+{
+    "autoSnippet.snippets": [
+    
+        {
+            "pattern": "**/*.h",
+            "snippet": "header-template"
+        },
+        {
+            "pattern": "**/*.cpp",
+            "snippet": "body-template"
+        },
+        {
+            "language": "javascript",
+            "snippet": "template"
+        }
+    ],
+    "cph.general.defaultLanguageTemplateFileLocation": "/home/shivankar/templates/body-template.cpp",
+    "emmet.extensionsPath": [
+        "/home/shivankar/templates/body-template.cpp"
+    ],
+    "cph.general.defaultLanguage": "cpp"
+}

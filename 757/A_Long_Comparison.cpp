@@ -1,0 +1,58 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define fo(i,n) for(i=0;i<n;i++)
+#define Fo(i,k,n) for(i=k;k<n?i<n:i>n;k<n?i+=1:i-=1)
+#define ll long long
+#define int long long
+#define mod 1000000007
+#define vi vector<int>
+#define f first
+#define s second
+#define pb push_back
+int mfun(int i, int m)
+{
+    if(i < 0)   return m-(abs(i)%m);
+    else return i%m;
+}
+//vector<vector<int>> a(n , vector<int>(m, 0));
+
+/*=======================*/
+
+void solve() {
+    int i, j, n, m;
+    cin >> m >> n;
+    int p, q;
+    cin >> p >> q;
+    int x, y;
+    if(q == 0)  y = p;
+    else
+    {
+        string str = to_string(p);
+        fo(i, q)    str+= '0';
+        y = stoll(str);
+    }
+
+    if(n == 0) x = m;
+    else
+    {
+        string str = to_string(m);
+        fo(i, n)    str+= '0';
+        x = stoll(str);
+    }
+
+    if(x < y) cout << "<" << endl;
+    else if(x==y) cout << "=" << endl;
+    else cout << ">" << endl;
+}
+
+int32_t main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t = 1;
+    cin >> t;
+    while(t--) {
+      solve();
+    }
+
+    return 0;
+}

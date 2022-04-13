@@ -1,0 +1,6 @@
+{
+    "cph.general.defaultLanguageTemplateFileLocation": "/home/shivankar/templates_cp/body-template.cpp",
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
